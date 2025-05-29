@@ -1,7 +1,7 @@
 from unittest import expectedFailure
 
 from conftest import mock_bun
-from praktikum_files.burger import Burger
+from praktikum.burger import Burger
 
 class TestBurger:
 

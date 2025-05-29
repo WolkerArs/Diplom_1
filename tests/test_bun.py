@@ -1,7 +1,7 @@
 import pytest
 
 from data import BunData
-from praktikum_files.bun import Bun
+from praktikum.bun import Bun
 
 class TestBun:
 

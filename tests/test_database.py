@@ -1,5 +1,5 @@
 from data import BunData, IngredientData
-from praktikum_files.database import Database
+from praktikum.database import Database
 
 class TestDatabase:
 
