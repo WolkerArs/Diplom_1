@@ -44,7 +44,12 @@ class TestBurger:
         burger.add_ingredient(mock_ingredient_1)
         burger.add_ingredient(mock_ingredient_2)
 
-        expected_result = f'(==== black bun ====)
-
+        expected_result = (
+            '(==== black bun ====)\n'
+            '= sauce sour cream =\n'
+            '= filling sausage =\n'
+            '(==== black bun ====)\n'
+            '\nPrice: 700'
+        )
 
         assert burger.get_receipt() == expected_result
