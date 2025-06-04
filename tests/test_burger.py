@@ -1,5 +1,3 @@
-from unittest import expectedFailure
-
 from conftest import mock_bun
 from praktikum.burger import Burger
 from data import ExpectedResults
