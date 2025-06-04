@@ -2,6 +2,7 @@ from unittest import expectedFailure
 
 from conftest import mock_bun
 from praktikum.burger import Burger
+from data import ExpectedResults
 
 class TestBurger:
 
@@ -44,12 +45,6 @@ class TestBurger:
         burger.add_ingredient(mock_ingredient_1)
         burger.add_ingredient(mock_ingredient_2)
 
-        expected_result = (
-            '(==== black bun ====)\n'
-            '= sauce sour cream =\n'
-            '= filling sausage =\n'
-            '(==== black bun ====)\n'
-            '\nPrice: 700'
-        )
+        expected_result = ExpectedResults.RECEIPT_TEXT
 
         assert burger.get_receipt() == expected_result

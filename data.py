@@ -26,3 +26,13 @@ class DatabaseBun:
         ["white bun", 200, 1],
         ["red bun", 300, 2]
     ]
+
+class ExpectedResults:
+
+    RECEIPT_TEXT = (
+            '(==== black bun ====)\n'
+            '= sauce sour cream =\n'
+            '= filling sausage =\n'
+            '(==== black bun ====)\n'
+            '\nPrice: 700'
+        )
